@@ -1,4 +1,4 @@
-const uint8_t motorPin = 3;
+const uint8_t motorPin = 11;
 
 int power = 0;
 
@@ -14,9 +14,9 @@ void loop() {
     Serial.println(power);
     analogWrite(motorPin, power);
     power += 5;
-    delay(100);
+    delay(500);
   }
   power = 0;
 
-  delay (100000);
+  //delay (100000);
 }
