@@ -13,7 +13,7 @@ void loop() {
   while (power <= 255) {
     Serial.println(power);
     analogWrite(motorPin, power);
-    power += 5;
+    power += 2;
     delay(500);
   }
   power = 0;
